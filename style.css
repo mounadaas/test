@@ -1,0 +1,178 @@
+/* poppins font Added*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  direction: ltr;
+}
+.rtl-content {
+  direction: rtl; /* Override for specific section */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1c1c1c;
+}
+section {
+  border-radius: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+section div {
+  border-radius: 24px;
+  width: 50%;
+}
+/*-----------------start PART 1---------------*/
+section .login {
+  border-radius: 24px 0 0 24px;
+  padding: 97px 159px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+section .login h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  color: black;
+}
+section .login p {
+  color: #525252;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+section .login form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section .login form .input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  width: 364px;
+  height: 52px;
+  border-radius: 16px;
+  background-color: rgba(240, 237, 255, 0.8);
+}
+section .login form .input img {
+  width: 16px;
+  height: 16px;
+}
+section .login form .btn-login {
+  align-self: center;
+  width: 124px;
+  height: 52px;
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  border: none;
+  background-image: linear-gradient(
+    rgba(145, 129, 244, 1),
+    rgba(80, 56, 237, 1)
+  );
+  box-shadow: 0 8px 21px 0 rgba(0, 0, 0, 0.16);
+}
+.login span {
+  font-weight: 700;
+  color: #1c1c1c;
+}
+section .login form .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 364px;
+  height: 52px;
+  border-radius: 16px;
+  border: 1px solid rgba(240, 237, 255, 0.8);
+}
+section .login form .buttons button {
+  color: #525252;
+  background-color: transparent;
+  padding: 14px 18px;
+  border: none;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+}
+/*-----------------start PART 2---------------*/
+section .image {
+  background-image: url(Rectangle\ 4.png);
+  border-radius: 0 24px 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+section .image p {
+  line-height: 46px;
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+}
+section .image .container {
+  position: relative;
+  width: 412px;
+  height: 524px;
+  padding: 15px;
+  background-image: linear-gradient(
+    rgba(145, 129, 244, 1),
+    rgba(80, 56, 237, 1)
+  );
+  border-radius: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  color: rgba(255, 255, 255, 0.21);
+}
+.women {
+  position: absolute;
+  bottom: -4px;
+  right: 480px;
+}
+.thunder {
+  position: absolute;
+
+  bottom: 15%;
+  left: -9%;
+  background-color: white;
+  width: 79px;
+  height: 79px;
+  padding: 4px 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thunder img {
+  width: 42px;
+  height: 42px;
+}
+/*------------------ media queries---------------------*/
+@media (max-width: 972px) {
+  section .image,
+  section .login {
+    width: 100%;
+  }
+  section .image {
+    padding: 55px 5px;
+  }
+}
